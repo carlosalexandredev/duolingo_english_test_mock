@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/docs/index.html'); // O nome do seu arquivo HTML principal
 });
 
-const OPENAI_API_KEY = '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'; // Substitua pela sua chave de API do ChatGPT
+const OPENAI_API_KEY = 'OPENAI_API_KEY'; // Substitua pela sua chave de API do ChatGPT
 
 // Rota para enviar os dados do usuário para o ChatGPT
 app.post('/chatgpt', async (req, res) => {

@@ -1,0 +1,22 @@
+{
+  "name": "write_about_the_photo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.63.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

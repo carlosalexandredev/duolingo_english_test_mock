@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Write About the Photo (Mock)</title>
+    <link rel="shortcut icon" href="https://dy8n3onijof8f.cloudfront.net/static/images/testcenter/favicon.ico">
+    <meta name="description" content="Certificação de inglês do Duolingo: acessível e conveniente.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1,minimum-scale=1,user-scalable=yes">
+    <link rel="stylesheet" href="styles_generator.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span id="timer">1:00</span>
+            <a target="main" href="main.html">
+                <button class="quit-button">Quit</button>
+            </a>
+        </div>
+
+        <hr>
+
+        <h1>Write a description of the image below for 1 minute.</h1>
+
+        <div class="content">
+            <img id="imageSource" src="https://picsum.photos/400/300" class="description-image">
+            <textarea spellcheck="false" autocomplete="off" autocorrect="off" maxlength="5000" data-full-story-show="true" id="userText"></textarea>
+        </div>
+
+        <button class="next-button" id="checkButton">CHECK</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <img id="imageSource" src="https://picsum.photos/400/300" class="description-image">
+            <h2>Your Response:</h2>
+            <p id="responseText"></p>
+            <!-- Adiciona uma área para exibir a resposta do ChatGPT -->
+            <!-- <h2>ChatGPT Response:</h2>
+            <p id="chatgptResponse" style="color: green;"></p> -->
+            <a target="generator_image" href="generator_image.html">
+                <button id="nextButton" class="next-button-modal">NEXT</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -5,12 +5,12 @@ const fetch = require('node-fetch'); // Usando a versão 2.x do node-fetch
 const app = express();
 app.use(bodyParser.json());
 
-// Servir arquivos estáticos da pasta "public"
-app.use(express.static('public'));
+// Servir arquivos estáticos da pasta "docs"
+app.use(express.static('docs'));
 
 // Configurar a rota principal para servir o arquivo HTML
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/main.html'); // O nome do seu arquivo HTML principal
+    res.sendFile(__dirname + '/docs/index.html'); // O nome do seu arquivo HTML principal
 });
 
 const OPENAI_API_KEY = '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'; // Substitua pela sua chave de API do ChatGPT

@@ -14,35 +14,33 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="header">
-            <span id="timer">1:00</span>
+            <span id="timer">1:30</span>
             <a href="index.html">
                 <button class="quit-button">Quit</button>
             </a>
         </div>
 
         <hr>
-
-        <h1>Write a description of the image below for 1 minute.</h1>
+        <h1 id="description1-container" style="display: block;">Prepare to write about the image below.</h1>
+        <h1 id="description2-container" style="display: none;">Write a description of the image below for 1 minute.</h1>
 
         <div class="content">
             <img id="imageSource" src="https://picsum.photos/400/300" class="description-image">
-            <textarea spellcheck="false" autocomplete="off" autocorrect="off" maxlength="5000" data-full-story-show="true" id="userText"></textarea>
+            <textarea id="userText" style="display: none;" spellcheck="false" autocomplete="off" autocorrect="off" maxlength="5000" rows="5" class="form-control"></textarea>  
         </div>
 
-        <button class="next-button" id="checkButton">CHECK</button>
+        <button class="next-button" id="checkButton" style="display: none;">CHECK</button>
     </div>
 
     <!-- Modal -->
     <div id="modal" class="modal">
         <div class="modal-content">
-            <img id="imageSource" src="https://picsum.photos/400/300" class="description-image">
+            <img id="imageSourceModal" src="https://picsum.photos/400/300" class="description-image">
             <h2>Your Response:</h2>
             <p id="responseText"></p>
-            <!-- Adiciona uma área para exibir a resposta do ChatGPT -->
-            <!-- <h2>ChatGPT Response:</h2>
-            <p id="chatgptResponse" style="color: green;"></p> -->
             <a href="generator_image.html">
                 <button id="nextButton" class="next-button-modal">NEXT</button>
             </a>

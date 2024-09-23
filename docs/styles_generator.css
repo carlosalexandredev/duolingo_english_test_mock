@@ -78,16 +78,18 @@ textarea {
 
 /* Botão CHECK */
 .next-button {
-    padding: 8px 35px;
-    font-size: 14px;
+    padding: 10px 50px;
+    font-size: 16px;
     cursor: pointer;
-    display: inline-grid;
     font-weight: 700;
     letter-spacing: .5px;
     background-color: #3c5d87;
-    border: 1px solid #3a3a3a;
+    border: none;
     color: #fff;
     border-radius: 5px;
+    display: none;
+    margin: 0 auto; /* Alinha o botão horizontalmente ao centro */
+    display: block; /* Garante que o botão ocupe o espaço em bloco para centralização */
 }
 
 .next-button:disabled {

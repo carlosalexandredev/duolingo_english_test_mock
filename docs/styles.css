@@ -87,7 +87,8 @@ span {
 
 .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Alinha o botão à direita */
+    margin-top: 20px; /* Adiciona um espaço entre a tabela e o botão */
 }
 
 .start-button {
@@ -97,13 +98,15 @@ span {
     display: inline-grid;
     font-weight: 700;
     letter-spacing: .5px;
-}
-
-
-.start-button {
     background-color: #3c5d87;
     border-color: #fff;
     color: #fff;
     border: 1px solid;
     border-radius: 5px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #d0d0d0;
 }
